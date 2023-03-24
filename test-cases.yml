@@ -45,7 +45,7 @@
   test-data: |
     Категория - ноутбуки.
   steps:
-    Выбрать категорию ноутбуки.
+    - Выбрать категорию ноутбуки.
   expected-result: |
     Должны отобразится только товары данной категории.
 
@@ -59,7 +59,7 @@
   test-data: |
     Товар для поиска: Samsung Universe 9.
   steps:
-    Вводим в строку поиска - Samsung Universe 9.
+    - Вводим в строку поиска - Samsung Universe 9.
   expected-result: |
     На странице должен отобразится товар Samsung Universe 9.
 
@@ -86,7 +86,7 @@
   prerequisites: |
     Открыта страница магазина.
   steps:
-    Нажать на кнопку "Следующая".
+    - Нажать на кнопку "Следующая".
   expected-result: |
     Долджна отобразится следующая страница.
 
@@ -98,7 +98,7 @@
   prerequisites: |
     Открыта страница магазина.
   steps:
-    Нажать на кнопку "Предыдущая".
+    - Нажать на кнопку "Предыдущая".
   expected-result: |
     Долджна отобразится предидущая страница.
 
@@ -112,7 +112,7 @@
   test-data: |
     Язык - русский.
   steps:
-    Выбираем русския язык.
+    - Выбираем русския язык.
   expected-result: |
     Сайт должен отображаться на руссокм языке.
 
@@ -126,7 +126,7 @@
   test-data: |
     Това: Mornadi Velvet Bed.
   steps:
-    Нажать на кнопку "Добавить в корзину".
+    - Нажать на кнопку "Добавить в корзину".
   expected-result: |
     Товар должен добавиться в корзину пользователя.
 
@@ -140,7 +140,7 @@
   test-data: |
     В корзине товар Mornadi Velvet Bed.
   steps:
-    Нажать на кнопку "Оформить".
+    - Нажать на кнопку "Оформить".
   expected-result: |
     Пользователь должен увидеть сообщение, что заказ успешно оформлен.
 
@@ -154,7 +154,7 @@
   test-data: |
     В корзине товар: iPhone 9.
   steps:
-    Нажать на кнопку "Удалить".
+    - Нажать на кнопку "Удалить".
   expected-result: |
     Товар должен удалиться из корзины.
 
@@ -168,7 +168,7 @@
   test-data: |
     В корзине товар: iPhone 9.
   steps:
-    Нажать на кнопку "Продолжить покупки".
+    - Нажать на кнопку "Продолжить покупки".
   expected-result: |
     Полбзаватель из корзины должен перейти к катологу товаров.
 
@@ -182,7 +182,7 @@
   test-data: |
     В корзине товары: OPPOF19, Huawei P30, MacBook Pro.
   steps:
-    Нажать на кнопку "Очистить корзину".
+    - Нажать на кнопку "Очистить корзину".
   expected-result: |
     Из корзины должны удалиться все товары.
 
@@ -196,7 +196,7 @@
   test-data: |
     В корзине товар Freckle Treatment Cream- 15gm.
   steps:
-    Нажимаем на кнопку "Корзина".
+    - Нажимаем на кнопку "Корзина".
   expected-result: |
     Пользователь должен попасть в корзину.
 
@@ -210,7 +210,7 @@
   test-data: |
     Товар HP Pavilion 15-DK1056WM.
   steps:
-    Нажимаем на товар HP Pavilion 15-DK1056WM.
+    - Нажимаем на товар HP Pavilion 15-DK1056WM.
   expected-result: |
     Пользователь должен увидеть подробную информацию по товапу HP Pavilion 15-DK1056WM.
 
@@ -222,10 +222,10 @@
   prerequisites: |
     Открыта сайт в браузеое Opera.
   test-data: |
-    - Сайт https://hexlet-products-store.vercel.app.
-    - Браузер Opera, версия: 96.0.4693.50.
+    Сайт https://hexlet-products-store.vercel.app.
+    Браузер Opera, версия: 96.0.4693.50.
   steps:
-    Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
+    - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
   expected-result: |
     Сайт должен корректно отображаться в браузере Opera.
 
@@ -237,10 +237,10 @@
   prerequisites: |
     Открыта сайт в браузеое Google Chrome.
   test-data: |
-    - Сайт https://hexlet-products-store.vercel.app.
-    - Браузер Google Chrome, версия: 111.0.5563.65.
+    Сайт https://hexlet-products-store.vercel.app.
+    Браузер Google Chrome, версия: 111.0.5563.65.
   steps:
-    Отурыть сайт https://hexlet-products-store.vercel.app в браузере Google Chrome.
+    - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Google Chrome.
   expected-result: |
     Сайт должен корректно отображаться в браузере Opera.
 
@@ -252,10 +252,10 @@
   prerequisites: |
     Открыта сайт в браузеое Firefox.
   test-data: |
-    - Сайт https://hexlet-products-store.vercel.app.
-    - Браузер Firefox, версия: 110.0.1.
+    Сайт https://hexlet-products-store.vercel.app.
+    Браузер Firefox, версия: 110.0.1.
   steps:
-    Отурыть сайт https://hexlet-products-store.vercel.app в браузере Firefox.
+    - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Firefox.
   expected-result: |
     Сайт должен корректно отображаться в браузере Firefox.
 
@@ -267,9 +267,9 @@
   prerequisites: |
     Открыта сайт в браузере Opera.
   test-data: |
-    - Сайт https://hexlet-products-store.vercel.app.
-    - Браузер Opera, версия: 96.0.4693.50.
-    - Разрешение экрана 320 х 480.
+    Сайт https://hexlet-products-store.vercel.app.
+    Браузер Opera, версия: 96.0.4693.50.
+    Разрешение экрана 320 х 480.
   steps:
     - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
     - Щткрыть инструмент DevTools нажатием ctrl + shift + I.
@@ -286,9 +286,9 @@
   prerequisites: |
     Открыта сайт в браузере Opera.
   test-data: |
-    - Сайт https://hexlet-products-store.vercel.app.
-    - Браузер Opera, версия: 96.0.4693.50.
-    - Разрешение экрана 480 х 800.
+    Сайт https://hexlet-products-store.vercel.app.
+    Браузер Opera, версия: 96.0.4693.50.
+    Разрешение экрана 480 х 800.
   steps:
     - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
     - Щткрыть инструмент DevTools нажатием ctrl + shift + I.
@@ -305,9 +305,9 @@
   prerequisites: |
     Открыта сайт в браузере Opera.
   test-data: |
-    - Сайт https://hexlet-products-store.vercel.app.
-    - Браузер Opera, версия: 96.0.4693.50.
-    - Разрешение экрана 640 х 960.
+    Сайт https://hexlet-products-store.vercel.app.
+    Браузер Opera, версия: 96.0.4693.50.
+    Разрешение экрана 640 х 960.
   steps:
     - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
     - Щткрыть инструмент DevTools нажатием ctrl + shift + I.
@@ -324,9 +324,9 @@
   prerequisites: |
     Открыта сайт в браузере Opera.
   test-data: |
-    - Сайт https://hexlet-products-store.vercel.app.
-    - Браузер Opera, версия: 96.0.4693.50.
-    - Разрешение экрана 768 х 1024.
+    Сайт https://hexlet-products-store.vercel.app.
+    Браузер Opera, версия: 96.0.4693.50.
+    Разрешение экрана 768 х 1024.
   steps:
     - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
     - Щткрыть инструмент DevTools нажатием ctrl + shift + I.
