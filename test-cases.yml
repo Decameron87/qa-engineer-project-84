@@ -8,13 +8,17 @@
     Открыта страница регистрации.
   test-data: |
     Логин: Vova Пароль: password Номер телефона: 89062224578 mail: vova@mail.ru
-  steps: |
-    ["Вводим логин, Вводим пароль, Вводи номер телефона, Вводим mail, Нажимаем кнопку 'Зарегестрироваться'"]
+  steps:
+    - Вводим логин
+    - Вводим пароль
+    - Вводи номер телефона
+    - Вводим mail
+    - Нажимаем кнопку "Зарегестрироваться"
   expected-result: |
     Пользователь должен попасть в линый кабинет
 
 
-- summary: |
+- summary:
     Проверка входа пользователя с существующими логином и паролем.
   requirement: |
     При верном вводе логине и пароля пользователь должен войти в систему.
@@ -22,7 +26,7 @@
     Открыта страница логина.
   test-data: |
     Логин: Vova Пароль: password Номер телефона: 89062224578 mail: vova@mail.ru.
-  steps: |
+  steps:
     - Вводим логин
     - Вводим пароль
     - Вводи номер телефона
@@ -40,7 +44,7 @@
     Открыта страница выбора товаров.
   test-data: |
     Категория - ноутбуки.
-  steps: |
+  steps:
     Выбрать категорию ноутбуки.
   expected-result: |
     Должны отобразится только товары данной категории.
@@ -54,7 +58,7 @@
     Открыта страница магазина.
   test-data: |
     Товар для поиска: Samsung Universe 9.
-  steps: |
+  steps:
     Вводим в строку поиска - Samsung Universe 9.
   expected-result: |
     На странице должен отобразится товар Samsung Universe 9.
@@ -68,7 +72,7 @@
     Открыта страница магазина.
   test-data: |
     Начальная цена 10 Конечная цена 500.
-  steps: |
+  steps:
     - В первое поле цены вводим значение 10
     - Во второе поле цены вводим 500
   expected-result: |
@@ -81,7 +85,7 @@
     При нажатии кнопки "Следующая" должна отобразится следующая страница.
   prerequisites: |
     Открыта страница магазина.
-  steps: |
+  steps:
     Нажать на кнопку "Следующая".
   expected-result: |
     Долджна отобразится следующая страница.
@@ -93,7 +97,7 @@
     При нажатии кнопки "Предыдущая" должна отобразится предидущая страница.
   prerequisites: |
     Открыта страница магазина.
-  steps: |
+  steps:
     Нажать на кнопку "Предыдущая".
   expected-result: |
     Долджна отобразится предидущая страница.
@@ -107,7 +111,7 @@
     Открыта страница магазина.
   test-data: |
     Язык - русский.
-  steps: |
+  steps:
     Выбираем русския язык.
   expected-result: |
     Сайт должен отображаться на руссокм языке.
@@ -121,7 +125,7 @@
     Открыта страница овара.
   test-data: |
     Това: Mornadi Velvet Bed.
-  steps: |
+  steps:
     Нажать на кнопку "Добавить в корзину".
   expected-result: |
     Товар должен добавиться в корзину пользователя.
@@ -135,7 +139,7 @@
     Открыта корзина.
   test-data: |
     В корзине товар Mornadi Velvet Bed.
-  steps: |
+  steps:
     Нажать на кнопку "Оформить".
   expected-result: |
     Пользователь должен увидеть сообщение, что заказ успешно оформлен.
@@ -149,7 +153,7 @@
     Открыта корзина.
   test-data: |
     В корзине товар: iPhone 9.
-  steps: |
+  steps:
     Нажать на кнопку "Удалить".
   expected-result: |
     Товар должен удалиться из корзины.
@@ -163,7 +167,7 @@
     Открыта корзина.
   test-data: |
     В корзине товар: iPhone 9.
-  steps: |
+  steps:
     Нажать на кнопку "Продолжить покупки".
   expected-result: |
     Полбзаватель из корзины должен перейти к катологу товаров.
@@ -177,7 +181,7 @@
     Открыта корзина.
   test-data: |
     В корзине товары: OPPOF19, Huawei P30, MacBook Pro.
-  steps: |
+  steps:
     Нажать на кнопку "Очистить корзину".
   expected-result: |
     Из корзины должны удалиться все товары.
@@ -191,7 +195,7 @@
     Открыта страница каталога товаров.
   test-data: |
     В корзине товар Freckle Treatment Cream- 15gm.
-  steps: |
+  steps:
     Нажимаем на кнопку "Корзина".
   expected-result: |
     Пользователь должен попасть в корзину.
@@ -205,7 +209,7 @@
     Открыта страница каталога товаров.
   test-data: |
     Товар HP Pavilion 15-DK1056WM.
-  steps: |
+  steps:
     Нажимаем на товар HP Pavilion 15-DK1056WM.
   expected-result: |
     Пользователь должен увидеть подробную информацию по товапу HP Pavilion 15-DK1056WM.
@@ -220,7 +224,7 @@
   test-data: |
     - Сайт https://hexlet-products-store.vercel.app.
     - Браузер Opera, версия: 96.0.4693.50.
-  steps: |
+  steps:
     Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
   expected-result: |
     Сайт должен корректно отображаться в браузере Opera.
@@ -235,7 +239,7 @@
   test-data: |
     - Сайт https://hexlet-products-store.vercel.app.
     - Браузер Google Chrome, версия: 111.0.5563.65.
-  steps: |
+  steps:
     Отурыть сайт https://hexlet-products-store.vercel.app в браузере Google Chrome.
   expected-result: |
     Сайт должен корректно отображаться в браузере Opera.
@@ -250,7 +254,7 @@
   test-data: |
     - Сайт https://hexlet-products-store.vercel.app.
     - Браузер Firefox, версия: 110.0.1.
-  steps: |
+  steps:
     Отурыть сайт https://hexlet-products-store.vercel.app в браузере Firefox.
   expected-result: |
     Сайт должен корректно отображаться в браузере Firefox.
@@ -266,7 +270,7 @@
     - Сайт https://hexlet-products-store.vercel.app.
     - Браузер Opera, версия: 96.0.4693.50.
     - Разрешение экрана 320 х 480.
-  steps: |
+  steps:
     - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
     - Щткрыть инструмент DevTools нажатием ctrl + shift + I.
     - Открвть Toggle device toolbar нажатием ctrl + shift + M.
@@ -285,7 +289,7 @@
     - Сайт https://hexlet-products-store.vercel.app.
     - Браузер Opera, версия: 96.0.4693.50.
     - Разрешение экрана 480 х 800.
-  steps: |
+  steps:
     - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
     - Щткрыть инструмент DevTools нажатием ctrl + shift + I.
     - Открвть Toggle device toolbar нажатием ctrl + shift + M.
@@ -304,7 +308,7 @@
     - Сайт https://hexlet-products-store.vercel.app.
     - Браузер Opera, версия: 96.0.4693.50.
     - Разрешение экрана 640 х 960.
-  steps: |
+  steps:
     - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
     - Щткрыть инструмент DevTools нажатием ctrl + shift + I.
     - Открвть Toggle device toolbar нажатием ctrl + shift + M.
@@ -323,7 +327,7 @@
     - Сайт https://hexlet-products-store.vercel.app.
     - Браузер Opera, версия: 96.0.4693.50.
     - Разрешение экрана 768 х 1024.
-  steps: |
+  steps:
     - Отурыть сайт https://hexlet-products-store.vercel.app в браузере Opera.
     - Щткрыть инструмент DevTools нажатием ctrl + shift + I.
     - Открвть Toggle device toolbar нажатием ctrl + shift + M.
